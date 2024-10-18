@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="active_menu_color">#5662F6</color>
+    <color name="primaryColor">#5662F6</color>
+    <color name="middle_line_color">#E8E9EA</color>
+    <color name="bg_color_search">#EBEBEB</color>
+    <color name="down_menu_color">#777C82</color>
+    <color name="theme_color">#FFFFFF</color>
+</resources>

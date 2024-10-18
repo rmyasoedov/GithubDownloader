@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="@dimen/default_indent"
+        android:paddingEnd="@dimen/default_indent"
+        android:paddingTop="@dimen/default_indent"
+        android:paddingBottom="@dimen/default_indent">
+
+        <TextView
+            android:id="@+id/tvNameRepository"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ProjectTest"
+            android:textSize="20sp"
+            android:fontFamily="@font/noto_sans_medium"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/middle_line_color"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

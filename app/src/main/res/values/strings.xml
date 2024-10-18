@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GithubDownloader</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_search">Введите логин пользователя</string>
+    <string name="null_result_search">По вашему запросу результаты не найдены. Проверьте правильность ввода</string>
+</resources>

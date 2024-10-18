@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color_search">#353535</color>
+
+    <color name="active_menu_color">#FFFFFF</color>
+    <color name="theme_color">#000000</color>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/default_indent"
+        android:paddingEnd="@dimen/default_indent"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivIssue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvFileName"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFileName"
+            android:paddingBottom="5dp"
+            android:src="@drawable/ic_issue_file"/>
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingBottom="5dp"
+            android:fontFamily="@font/noto_sans_medium"
+            app:layout_constraintStart_toEndOf="@+id/ivIssue"
+            android:layout_marginStart="6dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="file_repository.zip"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clRepository"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvFileName">
+
+            <TextView
+                android:id="@+id/tvRepository"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans_bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="User / Repository"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/clRepository">
+
+            <TextView
+                android:id="@+id/tvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.98 Mb"
+                android:textSize="12sp"
+                android:fontFamily="@font/noto_sans_regular"
+                android:textColor="@color/down_menu_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/noto_sans_regular"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="16/10/2024 15:45"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/middle_line_color"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
